@@ -82,6 +82,7 @@ mp.save_screenshot("const.png")
 
 # Encerra o programa
 time.sleep(2)
+
 mp.quit()
 
 print("Programa Chegou ao fim")
