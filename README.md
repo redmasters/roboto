@@ -1,5 +1,5 @@
 # roboto
-Automatizando o processo de fechamento em loja do grupo mateus
+Automatizando o processo de fechamento em loja do grupo mateus, utilizando web scraping
 
 ### Requerimentos
 - Python
