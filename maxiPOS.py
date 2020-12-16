@@ -15,7 +15,7 @@ username = mp.find_element_by_xpath(
 password = mp.find_element_by_xpath(
     '//*[@id="mktform_content"]/div/div[5]/div/div[2]/div[1]/div[3]/input'
 ).send_keys("senha")
-# password.send_keys("41806")
+# password.send_keys("")
 
 login = mp.find_element_by_xpath(
     "/html/body/div[13]/form/div[2]/div/div[5]/div/div[2]/div[2]/div[2]/div"
