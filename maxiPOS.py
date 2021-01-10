@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import os
 
 from PIL import Image
 
@@ -56,21 +57,27 @@ consistencia = mp.find_element_by_xpath(
 consLoja = mp.find_element_by_xpath(
     "/html/body/div[12]/div[2]/span[4]/span/div[2]"
 ).click()
-# TODO Digitar data e Loja
+
+# Clica no calendário
 constData = mp.find_element_by_xpath(
     "/html/body/div[13]/form/div[2]/div[1]/div[1]/div"
 ).click()
+
+# Seleciona a data da loja
 constData = mp.find_element_by_xpath(
-    "/html/body/div[8]/table/tbody/tr[7]/td[1]"
+    "/html/body/div[8]/table/tbody/tr[8]/td[1]"
 ).click()
 
+
+# Digita o nr da loja
 constLoja = mp.find_element_by_xpath(
     "/html/body/div[13]/form/div[2]/div[1]/div[2]/input"
 )
+
 constLoja.send_keys("201")
 constLoja.send_keys(Keys.RETURN)
 
-# TODO Clicar em Consistir
+# Clicar em Consistir
 time.sleep(2)
 consistir = mp.find_element_by_xpath(
     "/html/body/div[13]/form/div[1]/div[3]/div[2]/div[1]"
@@ -83,4 +90,13 @@ mp.save_screenshot("const.png")
 # Encerra o programa
 time.sleep(2)
 mp.quit()
+
+# Confirma desliga PDV
+
+# confirma = "s"
+# while confirma != "S":
+#     print("Desliga PDVs?: ")
+
+
+# os.system("desliga_pdvs")
 print("Programa Chegou ao fim")
