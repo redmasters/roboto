@@ -17,7 +17,7 @@ logging.basicConfig(
 # Envia uma resposta ao receber o comando /start
 def start(update, context):
     context.bot.send_message(
-        chat_id=update.effective_chat.id, text="Fala jovem, qual a QTC?"
+        chat_id=update.effective_chat.id, text="Falaa jovem, qual a QTC?"
     )
 
 
