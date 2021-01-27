@@ -38,12 +38,12 @@ def consistir():
     # Desliga os PDVs
     desligando = True
     while desligando:
-        desliga = input("\nDesliga todos os PDVs?")
-        desliga = input("s/n ?")
+        print("\nDesliga todos os PDVs?")
+        desliga = input("s/n ? ")
         if desliga == "n":
             break
         else:
-            os.system("desliga_pdvs")
+            os.system("neofetch")
             desligando = False
 
 

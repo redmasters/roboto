@@ -13,6 +13,7 @@ class Firefox:
         self.url = "http://pdv.mateus/maxipos_backoffice/app"
 
     def navegar(self):
+        self.pause = time.sleep(1)
         self.firefox.get(self.url)
 
     def login_passwd(self):
