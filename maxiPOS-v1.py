@@ -59,8 +59,8 @@ def busca_panel():
     return enter
 
 
-# Navega até consistência
 def consistenca(url):
+    # Navega até consistência
     navegador.find_element_by_xpath(url).click()
 
 
@@ -128,7 +128,7 @@ click_loja("/html/body/div[12]/div[2]/span[4]/span/div[2]")
 # Clica no calendário e seleciona data
 click_calendario("/html/body/div[13]/form/div[2]/div[1]/div[1]/div")
 
-seleciona_data("/html/body/div[8]/table/tbody/tr[5]/td[3]")  # TODO
+seleciona_data("/html/body/div[8]/table/tbody/tr[7]/td[5]")  # TODO
 # Automatizar seleção de data, resolver problema de 'obscure' data
 
 # Seleciona loja
@@ -150,7 +150,7 @@ pausa(2)
 navegador.quit()
 
 # Desliga PDVs
-os.system("desliga_pdvs")
+# os.system("dsesliga_pdvs")
 
 # Programa Termina
 print("Programa chegou ao fim")
