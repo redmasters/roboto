@@ -12,5 +12,6 @@ pausa()
 navegador.login(41806, 41806)
 pausa()
 navegador.painel_terminal()
+navegador.painel_consistencia()
 
 # navegador.close()
