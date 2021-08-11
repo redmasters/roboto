@@ -9,7 +9,7 @@ url = 'http://pdv.mateus/maxipos_backoffice/app'
 navegador = Driver()
 navegador.go_url(url)
 pausa()
-navegador.login(41806, 41806)
+navegador.login(****, ****)
 pausa()
 navegador.painel_terminal()
 navegador.painel_consistencia()
